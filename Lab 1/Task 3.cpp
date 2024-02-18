@@ -1,20 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Dog {
+class Dog
+{
 public:
 	string name;
 	string breed;
 	int age;
 	void bark()
+	{
 		cout << name << " says Woof!" << endl;
-
+	}
 	void details()
+	{
 		cout << "Breed is " << breed << endl
-			<< name<<"'s age is " << age <<" years"<< endl;
+			 << name << "'s age is " << age << " years" << endl;
+	}
 };
 
-class Person {
+class Person
+{
 public:
 	string name;
 	int age;
@@ -22,28 +27,29 @@ public:
 	void persondetails()
 	{
 		cout << "Name: " << name << endl
-			<< name<<"'s age: " << age << endl;
+			 << name << "'s age: " << age << endl;
 		introducePet();
 	}
 
-	void introducePet() {
+	void introducePet()
+	{
 		cout << "My dog's name is " << pet.name << endl;
 		pet.details();
 		pet.bark();
 	}
 };
 
-class House {
+class House
+{
 public:
 	int housenumber;
 	Person person1;
 	void Details()
 	{
-		cout << "House no. " << housenumber<<endl;
+		cout << "House no. " << housenumber << endl;
 		person1.persondetails();
 	}
 };
-
 
 int main()
 {
